@@ -4,7 +4,7 @@ A simple full-stack task management application built for the technical assessme
 
 ## Project Screenshot
 
-![Task Manager UI](screenshots/task-manager-ui.png)
+![Task Manager UI](screenshots/task-manager-ui.PNG)
 
 ## Tech Stack
 
@@ -62,7 +62,7 @@ MongoDB Atlas Free Tier
 
 ## Project Database Screenshot
 
-![Task Manager UI](screenshots/task-manager-Db.PNG)
+![Task Manager DB](screenshots/task-manager-Db.PNG)
 
 ## Author
 
