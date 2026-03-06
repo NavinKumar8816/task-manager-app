@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 function AddTask({ fetchTasks }) {
 
   const [title, setTitle] = useState("");
@@ -14,7 +16,7 @@ function AddTask({ fetchTasks }) {
       return;
     }
 
-    await axios.post("http://localhost:5000/api/tasks", {
+    await axios.post(`${API_URL}/api/tasks`, {
       title,
       description
     });

@@ -4,12 +4,14 @@ import "./App.css";
 import AddTask from "./components/AddTask";
 import TaskList from "./components/TaskList";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 function App() {
 
   const [tasks,setTasks] = useState([]);
 
   const fetchTasks = async ()=>{
-    const res = await axios.get("http://localhost:5000/api/tasks");
+    const res = await axios.get(`${API_URL}/api/tasks`);
     setTasks(res.data);
   }
 

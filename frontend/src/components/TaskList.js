@@ -1,14 +1,16 @@
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 function TaskList({ tasks, fetchTasks }) {
 
   const markCompleted = async (id) => {
-    await axios.put(`http://localhost:5000/api/tasks/${id}`);
+    await axios.put(`${API_URL}/api/tasks/${id}`);
     fetchTasks();
   };
 
   const deleteTask = async (id) => {
-    await axios.delete(`http://localhost:5000/api/tasks/${id}`);
+    await axios.delete(`${API_URL}/api/tasks/${id}`);
     fetchTasks();
   };
 
