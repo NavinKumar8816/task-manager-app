@@ -2,6 +2,10 @@
 
 A simple full-stack task management application built for the technical assessment.
 
+## Project Screenshot
+
+![Task Manager UI](screenshots/task-manager-ui.png)
+
 ## Tech Stack
 
 Frontend
@@ -55,6 +59,10 @@ npm start
 ## Database
 
 MongoDB Atlas Free Tier
+
+## Project Database Screenshot
+
+![Task Manager UI](screenshots/task-manager-Db.PNG)
 
 ## Author
 
